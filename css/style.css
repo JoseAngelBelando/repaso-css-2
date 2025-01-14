@@ -1,0 +1,136 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: rgb(25, 161, 174); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* circulos */
+.circle-top,
+.circle-bottom {
+    position: absolute;
+    z-index: -1;
+}
+
+.circle-top {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.circle-bottom {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+
+/* tarjeta principal */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-photo {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+/* nombre y edad */
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre el nombre y la edad */
+    margin-top: 50px;
+}
+
+.name-name {
+    font-size: 18px;
+    color: hsl(230, 35%, 40%);
+}
+
+.name-span {
+    font-size: 18px;
+    color: hsl(230, 35%, 60%);
+}
+.name-parrafo{
+    font-size: 14px;
+    padding: 8px 43px 0px 42px;
+}
+/* ubicacion */
+p {
+    font-size: 1rem;
+    color: hsl(231, 23%, 55%);
+    margin-bottom: 15px;
+}
+
+/* separador */
+hr {
+    width: 80%;
+    border: none;
+    border-top: 1px solid hsl(231, 23%, 90%);
+    margin: 20px 0;
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.box-div {
+    display: flex;
+    flex-direction: column; /* Coloca h2 y span en columna */
+    align-items: center; 
+    text-align: center;
+}
+
+.box-title {
+    font-size: 1.25rem;
+    color: hsl(230, 35%, 40%);
+    margin-bottom: 5px;
+}
+
+.box-span {
+    font-size: 0.85rem;
+    color: hsl(231, 23%, 55%);
+}
